@@ -19,10 +19,6 @@ Parameters:
     Type: String
     Default: None
     Description: Optional. The name of the SSH key to use to access the repository. It should be the name of the SSH key stored in the AWS Systems Manager Parameter Store.
-  BootstrapVersion:
-    Type: AWS::SSM::Parameter::Value<String>
-    Default: /cdk-bootstrap/sviola/version
-    Description: Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
 Resources:
   QIamConstructQIamRole9351BD42:
     Type: AWS::IAM::Role
